@@ -20,10 +20,12 @@ theme: /
             "археографическая" -> /1_right
     
     state: 1_wrong
+        q: *anything*
         a: Ответ записан!
         go!: question_2
         
     state: 1_right
+        a: *anything*
         a: Ответ записан!
         script:
             $session.result = $session.result + 1;
